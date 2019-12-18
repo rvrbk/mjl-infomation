@@ -1,8 +1,18 @@
+$yellow: #f2e121;
+$scale-factor: 0.2;
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web|Baloo+Bhai&display=swap');
 
-$yellow: #f2e121;
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
 
-html, body {
+html, body, #vue-app {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -10,4 +20,61 @@ html, body {
     background-color: $yellow;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1em;
+}
+
+.infomation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .wheel {
+        animation: rotation 0.3s infinite linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        height: 98%;
+        border-radius: 50%;
+    }
+
+    .tire {
+        width: 400px;
+        height: 400px;
+        background-color: #000;
+
+        .outer-tire {
+            width: 96%;
+            height: 96%;
+            background-color: #1e1e1e;
+
+            .piezo-units {
+                width: 96%;
+                height: 96%;
+                background-color: $yellow;
+
+                .inner-tire {
+                    width: 98%;
+                    height: 98%;
+                    background-color: #1e1e1e;
+
+                    .rim {
+                        width: 96%;
+                        height: 96%;
+                        background-color: #212121;
+
+                        .beam {
+                            position: relative;
+                            background-color: $yellow;
+                            flex-shrink: 0;
+                            width: 49px * $scale-factor;
+                            height: 293px * $scale-factor;
+                            margin-right: 39px * $scale-factor;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

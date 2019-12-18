@@ -1,14 +1,11 @@
 <template>
     <section class="infomation">
-        <div class="wheel">
-            <div class="tire">
-                <div class="outer-tire">
-                    <div class="piezo-units">
-                        <div class="inner-tire">
-                            <div class="mjl-logo"></div>
-                            <div class="rim">
-                                <div class="mjl-logo"></div>
-                            </div>
+        <div class="tire wheel">
+            <div class="outer-tire wheel">
+                <div class="piezo-units wheel">
+                    <div class="inner-tire wheel">
+                        <div class="rim wheel">
+                            <div class="beam"></div>
                         </div>
                     </div>
                 </div>
@@ -20,7 +17,13 @@
 <script>
 
 export default {
-
+    mounted() {
+        //gsap.to('.tire', { 
+        //    duration: 2,
+        //    rotation: '260deg',
+        //    repeat: -1
+        //});
+    }
 }
 
 </script>
