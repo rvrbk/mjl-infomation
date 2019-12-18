@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web|Baloo+Bhai&display=swap');
+
+$yellow: #f2e121;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $yellow;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+}
