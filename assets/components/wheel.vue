@@ -5,7 +5,14 @@
                 <div class="piezo-units wheel">
                     <div class="inner-tire wheel">
                         <div class="rim wheel">
-                            <div class="beam"></div>
+                            <div class="mask">
+                                <div class="crashtest">
+                                    <div class="square black"></div>
+                                    <div class="square yellow"></div>
+                                    <div class="square yellow"></div>
+                                    <div class="square black"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
