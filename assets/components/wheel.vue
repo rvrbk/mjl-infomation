@@ -18,18 +18,42 @@
                 </div>
             </div>
         </div>
+        <div class="watt">
+            <div v-for="i in 50" :key="i" class="spark"></div>
+        </div>
+        <div class="billboard">{{ lines[pointer] }}</div>
     </section>
 </template>
 
 <script>
 
 export default {
+    data() {
+        return {
+            lines: [
+                'as the car drives...',
+                'the tires experience friction from the road underneath',
+                'the piezo units inside them experience this friction too',
+                'they will, due to their nature, produce electrical currents',
+                'these currents are guided to the car\'s batteries',
+                'where they will increase the range of the car and...',
+                'give the driver a free of charge charge'
+            ],
+            pointer: 0,
+            fade: ''
+        }
+    },
     mounted() {
-        //gsap.to('.tire', { 
-        //    duration: 2,
-        //    rotation: '260deg',
-        //    repeat: -1
-        //});
+        const scope = this;
+
+        window.setInterval(() => {
+            if(scope.pointer == (scope.lines.length - 1)) {
+                scope.pointer = 0;
+            }
+            else {
+                scope.pointer++;
+            }
+        }, 5000);
     }
 }
 
