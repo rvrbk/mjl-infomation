@@ -40,8 +40,9 @@ html, body, #vue-app {
 
     .billboard {
         position: relative;
-        font-size: 1.3em;
+        font-size: .9em;
         margin-top: 40px;
+        text-align: center;
     }
 
     .watt {
@@ -151,7 +152,7 @@ html, body, #vue-app {
 
         .watt {
             top: -33px;
-            left: -30px;
+            left: -40px;
         }
     }
   }
