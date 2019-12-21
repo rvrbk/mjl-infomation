@@ -33,7 +33,7 @@ export default {
             lines: [
                 'as the car drives...',
                 'the tires experience friction from the road underneath',
-                'the piezo units inside them experience this friction too',
+                'the piezo units inside them get deformed',
                 'they will, due to their nature, produce electrical currents',
                 'these currents are guided to the car\'s batteries',
                 'where they will increase the range of the car and...',

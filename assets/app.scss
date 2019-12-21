@@ -155,4 +155,22 @@ html, body, #vue-app {
             left: -40px;
         }
     }
-  }
+}
+
+@media only screen and (max-height: 400px) {
+    .infomation {
+        .billboard {
+            font-size: 2em;
+        }
+    
+        .tire {
+            width: 200px;
+            height: 200px;
+        }
+
+        .watt {
+            top: -23px;
+            left: -40px;
+        }
+    }
+}
